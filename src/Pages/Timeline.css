@@ -1,0 +1,76 @@
+.timeline-container {
+  position: relative;
+  width: 100%;
+  height: 150px;
+  background: #333;
+  border-radius: 5px;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5);
+  margin-top: 10px;
+  overflow: hidden;
+}
+
+.video-cards {
+  display: flex;
+  margin-top: 10px;
+}
+
+.video-card {
+  height: 80px;
+  margin-right: 10px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 5px;
+  position: relative;
+}
+
+.video-card.playing {
+  border: 2px solid #ffcc00;
+}
+
+.playhead {
+  position: absolute;
+  top: 0;
+  width: 10px;
+  height: 80px;
+  background: #ffcc00;
+  cursor: pointer;
+}
+
+.playhead-time {
+  position: absolute;
+  top: 85px;
+  left: -25px;
+  width: 60px;
+  font-size: 12px;
+  color: #fff;
+  text-align: center;
+  pointer-events: none;
+}
+
+.video-card-preview {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.trimmed-section {
+  position: absolute;
+  height: 100%;
+  background-color: rgba(255, 0, 0, 0.2);
+}
+
+.trim-handle {
+  width: 10px;
+  height: 100%;
+  background-color: red;
+  position: absolute;
+  cursor: ew-resize;
+}
+
+.start-handle {
+  left: 0;
+}
+
+.end-handle {
+  right: 0;
+}

@@ -1,0 +1,22 @@
+body {
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.video-editor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+
+.timeline {
+  width: 100%;
+  margin-top: 10px;
+}
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
